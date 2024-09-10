@@ -101,7 +101,7 @@ def rename_task(num_num):
     new_task = name, description, prior
     all_tasks[num_num].name, all_tasks[num_num].description, all_tasks[num_num].prior = new_task
     print("Задача изменена\n")
-    print(all_tasks[num_num])
+    # print(all_tasks[num_num])
 
 def delete_task(num_num):
     tusk_tusk = all_tasks[num_num].name, all_tasks[num_num].description
