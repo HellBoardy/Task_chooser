@@ -46,7 +46,7 @@ def get_random_task():  #Вывод рандомной задачи
     # print(got_task.__dict__)
     #
     name, discr, prior = got_task.name, got_task.description, got_task.prior
-    print("\nТвоя задача на сегодня:\n{0}\n{1}".format(name, discr))
+    print("\n--- Твоя задача на сегодня ---:\n\n{0}\n{1}".format(name, discr))
 
 def print_task(a):
     task_list = load_tasks() #task_list существует для того, чтобы заполнить список задач all_tasks
@@ -201,6 +201,7 @@ class Task:
 
 all_tasks = []
 what_to_do()
+last = input('\n--- Теперь нажми любую клавишу и иди выполнять ---')
 
 # for i in range(4):
 #     all_tasks.append(Task('Задача {0}'.format(i),'Описание {0}'.format(i),5))
