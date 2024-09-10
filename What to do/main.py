@@ -1,5 +1,6 @@
 from dataclasses import dataclass as dc
 from random import randint as rnd
+from msvcrt import getch as any_key
 
 
 def resave_tasks():
@@ -201,8 +202,8 @@ class Task:
 
 all_tasks = []
 what_to_do()
-last = input('\n--- Теперь нажми любую клавишу и иди выполнять ---')
-
+print('\n--- Теперь нажми любую клавишу и иди выполнять ---\n')
+any_key()
 # for i in range(4):
 #     all_tasks.append(Task('Задача {0}'.format(i),'Описание {0}'.format(i),5))
 
